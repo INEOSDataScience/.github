@@ -1,7 +1,7 @@
 name: Initiative
 description: Create an initiative; big picture work, large effort, many individual efforts with their own DoD
 title: "[Initiative]: "
-type: ["initiative"]
+type: initiative
 projects: ["INEOSDataScience/15"] # automatically add to this project
 assignees:
   - SpencerLMorrison
