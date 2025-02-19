@@ -1,5 +1,5 @@
-name: "Initiative"
-description: "Create an initiative; big picture work, large effort, many individual efforts with their own DoD"
+name: Initiative
+description: Create an initiative; big picture work, large effort, many individual efforts with their own DoD
 title: "[Initiative]: "
 type: ["initiative"]
 projects: ["INEOSDataScience/15"] # automatically add to this project
@@ -11,7 +11,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        "### Initiative Details"
         Provide the following details to define the initiative:
   - type: textarea
     id: description
