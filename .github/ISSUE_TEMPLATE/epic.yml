@@ -1,0 +1,32 @@
+name: Epic
+description: Create an epic; distinct project, medium effort, many stories, with its own DoD
+title: "[Epic]: "
+type: epic
+projects: ["INEOSDataScience/15"] # automatically add to this project
+assignees:
+  - SpencerLMorrison
+  - PierceLovesee
+  - BoKnows11
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Provide the following details to define the epic:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the epic
+      placeholder: describe the epic
+    validations:
+      required: true
+  - type: textarea
+    id: stakeholder-reqs
+    attributes:
+      label: Stakeholder Requirements
+      placeholder: |
+        Describe the stakeholder requirements for the epic.  What are the needed inputs, outputs, form factor, etc.
+        1. requirement 1
+        2. requirement 2
+        3. requirement 3
+    validations:
+      required: true
