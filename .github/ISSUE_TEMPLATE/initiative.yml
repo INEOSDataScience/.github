@@ -1,0 +1,33 @@
+name: Initiative
+description: Create an initiative; big picture work, large effort, many individual efforts with their own DoD
+title: "[Initiative]: "
+type: ["initiative"]
+projects: ["INEOSDataScience/15"] # automatically add to this project
+assignees:
+  - SpencerLMorrison
+  - PierceLovesee
+  - BoKnows11
+body:
+  - type: markdown
+    attributes:
+      value: |
+        "### Initiative Details"
+        Provide the following details to define the initiative:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the initiative
+      placeholder: describe the initiative
+    validations:
+      required: true
+  - type: textarea
+    id: stakeholder-reqs
+    attributes:
+      label: Stakeholder Requirements
+      placeholder: |
+        Describe the stakeholder requirements for the initiative.  What are the needed inputs, outputs, form factor, etc.
+        1. requirement 1
+        2. requirement 2
+        3. requirement 3
+    validations:
+      required: true
