@@ -1,5 +1,5 @@
 name: Story
-description: Feature addition to a Validated Product | parent: epic
+description: "Feature addition to a Validated Product | parent: epic"
 title: "[Story]: "
 type: story
 projects: ["INEOSDataScience/15"] # automatically add to this project
