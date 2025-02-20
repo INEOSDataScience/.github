@@ -1,8 +1,8 @@
 name: Epic
-description: Create an epic; distinct project, medium effort, many stories, with its own DoD
+description: Medium sized Product or large Feature addition to existing Product (needs some level of Planning and Validating) | parent: initiative
 title: "[Epic]: "
 type: epic
-projects: ["INEOSDataScience/15"] # automatically add to this project
+projects: ["INEOSDataScience/15"]
 assignees:
   - SpencerLMorrison
   - PierceLovesee

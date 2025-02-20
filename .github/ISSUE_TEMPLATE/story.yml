@@ -1,5 +1,5 @@
 name: Story
-description: Create a Story; distinct unit of work, intended to increment an Epic
+description: Feature addition to a Validated Product | parent: epic
 title: "[Story]: "
 type: story
 projects: ["INEOSDataScience/15"] # automatically add to this project

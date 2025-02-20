@@ -1,0 +1,82 @@
+name: Tech Debt
+description: Documenting tech debt to be addressed at a future time
+title: "[Tech Debt]: "
+type: "tech debt"
+projects: ["INEOSDataScience/15"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide details about this technical debt item:
+  - type: textarea
+    id: tldr
+    attributes:
+      label: TL;DR
+      description: Brief summary of the technical debt
+      placeholder: Example - "Acknowledging avoidable data duplication in data pipeline X.  A potential solution is / is not identified..."
+    validations:
+      required: true
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Estimated Cost 💸
+      description: T-shirt size estimation of effort required to fix
+      options:
+        - SMALL
+        - MEDIUM
+        - LARGE
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description 📋
+      description: A clear and concise description of what the tech debt is and why it was created
+      placeholder: Describe the technical debt and the context around its creation...
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact 💣
+      description: Current or potential impact of this technical debt
+      placeholder: Describe how this tech debt affects the system, team, or business...
+    validations:
+      required: true
+  - type: textarea
+    id: solutions
+    attributes:
+      label: Proposed Solutions 🐿️
+      description: How would you fix it? List potential solutions with their pros and cons
+      placeholder: |
+        Solution 1:
+        - How:
+        - Pros 💚:
+        - Cons 💔:
+
+        Solution 2:
+        - How:
+        - Pros 💚:
+        - Cons 💔:
+    validations:
+      required: false
+  - type: textarea
+    id: related-files
+    attributes:
+      label: Relevent Code / Files / Links
+      description: List the relevent code related to this technical debt
+      placeholder: |
+        - path/to/file1
+        - path/to/file2
+        - url1
+        - etc.
+    validations:
+      required: false
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes 🤔
+      description: Any other relevant information or context
+      placeholder: Add any other context about the technical debt here
+    validations:
+      required: false
