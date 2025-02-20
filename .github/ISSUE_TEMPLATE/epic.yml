@@ -1,5 +1,5 @@
 name: Epic
-description: Medium sized Product or large Feature addition to existing Product (needs some level of Planning and Validating) | parent: initiative
+description: "Medium sized Product or large Feature addition to existing Product (needs some level of Planning and Validating) | parent: initiative"
 title: "[Epic]: "
 type: epic
 projects: ["INEOSDataScience/15"]
