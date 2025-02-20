@@ -13,8 +13,7 @@ body:
     attributes:
       label: What happened?
       description: Describe the bug. Copy/pasta Team's chats, texts, etc.
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      placeholder: A bug happened!
     validations:
       required: true
   - type: textarea
