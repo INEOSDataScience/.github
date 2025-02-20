@@ -1,0 +1,18 @@
+name: Story
+description: Create a Story; distinct unit of work, intended to increment an Epic
+title: "[Story]: "
+type: story
+projects: ["INEOSDataScience/15"] # automatically add to this project
+assignees:
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Provide the following details to define the story:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the story
+      placeholder: what work do you intend to do to increment the epic?
+    validations:
+      required: true
