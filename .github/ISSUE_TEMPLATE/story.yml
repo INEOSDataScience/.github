@@ -3,7 +3,6 @@ description: Create a Story; distinct unit of work, intended to increment an Epi
 title: "[Story]: "
 type: story
 projects: ["INEOSDataScience/15"] # automatically add to this project
-assignees:
 body:
   - type: markdown
     attributes:
