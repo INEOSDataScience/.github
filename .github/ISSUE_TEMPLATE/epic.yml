@@ -30,3 +30,32 @@ body:
         3. requirement 3
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Definition of Done (DoD)
+
+        - [ ] Automated
+          - [ ] The product takes no manual effort from a developer to use in production
+        - [ ] Documented
+          - [ ] Tech debt has been acknowledged and documented.
+          - [ ] Is a run book written if needed?
+          - [ ] Definitions (Data Dictionary)
+            - [ ] Where is data coming from
+            - [ ] What do outputs mean (different types of "production")
+        - [ ] Validated
+          - [ ] The (Validated) product has been demo-ed / handed-over to the stake holder
+            - [ ] Their needs are met as set out during Validation
+          - [ ] Communication to all users of the product
+            - [ ] Blast emails or messages itemizing exactly what has changed
+              - [ ] If there's any thing being decommissioned or changed
+              - [ ] Where the new product lives
+        - [ ] Fits the Stack (Should we be developing with/in/for X piece of tech)
+          - [ ] The product has been developed in the agreed upon Stack
+            - [ ] "The Stack" will become fully defined with continued development
+        - [ ] Explainable
+          - [ ] The primary developer of the product is able to lead any technical discussion on the product
+          - [ ] All code has undergone a PR process
+          - [ ] Is the product observable, and can we quickly explain a failure? (i.e. logging, email notifications)
+        - [ ] IT Handover 
+          - [ ] The product is able to be handed over to IT, if intended to be handed over
