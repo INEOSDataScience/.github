@@ -9,25 +9,6 @@ body:
       value: |
         Please provide details about this technical debt item:
   - type: textarea
-    id: tldr
-    attributes:
-      label: TL;DR
-      description: Brief summary of the technical debt
-      placeholder: Example - "Acknowledging avoidable data duplication in data pipeline X.  A potential solution is / is not identified..."
-    validations:
-      required: true
-  - type: dropdown
-    id: cost
-    attributes:
-      label: Estimated Cost 💸
-      description: T-shirt size estimation of effort required to fix
-      options:
-        - SMALL
-        - MEDIUM
-        - LARGE
-    validations:
-      required: true
-  - type: textarea
     id: description
     attributes:
       label: Description 📋
@@ -46,7 +27,7 @@ body:
   - type: textarea
     id: solutions
     attributes:
-      label: Proposed Solutions 🐿️
+      label: Proposed Solutions
       description: How would you fix it? List potential solutions with their pros and cons
       placeholder: |
         Solution 1:
@@ -70,14 +51,6 @@ body:
         - path/to/file2
         - url1
         - etc.
-    validations:
-      required: false
-  - type: textarea
-    id: additional-notes
-    attributes:
-      label: Additional Notes 🤔
-      description: Any other relevant information or context
-      placeholder: Add any other context about the technical debt here
     validations:
       required: false
       
