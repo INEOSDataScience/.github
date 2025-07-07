@@ -1,0 +1,25 @@
+name: External Request
+description: "Request from external stakeholder or team"
+title: "[External Request]: "
+type: external-request
+projects: ["INEOSDataScience/15"]
+assignees: ["SpencerLMorrison"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide the following details to document the External Request:
+  - type: input
+    id: requester
+    attributes:
+      label: Requester
+      placeholder: Name & Team Making Request
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Request Description
+      placeholder: Describe what is needed, including any specific requirements, timeline, or context
+    validations:
+      required: true
