@@ -1,32 +1,25 @@
-name: Auto Draft PR
+name: Set PR to Draft on Creation
 
 on:
   pull_request:
-    types: [opened, reopened]
+    types:
+      - opened
+      - reopened
 
 jobs:
-  auto-draft-pr:
+  set-draft:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
     steps:
-      - name: Set PR to draft
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Set PR to Draft
         if: github.event.pull_request.draft == false
-        uses: actions/github-script@v7
-        with:
-          script: |
-            console.log(`Attempting to convert PR #${context.issue.number} to draft...`);
-            
-            try {
-              await github.rest.pulls.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: context.issue.number,
-                draft: true
-              });
-              
-              console.log(`Successfully converted PR #${context.issue.number} to draft`);
-            } catch (error) {
-              console.error(`Error converting PR to draft:`, error);
-              throw error;
-            } 
+        run: |
+          curl -X PATCH \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{"draft": true}' \
+            https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }} 
