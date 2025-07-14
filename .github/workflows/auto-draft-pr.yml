@@ -1,0 +1,25 @@
+name: Set PR to Draft on Creation
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+
+jobs:
+  set-draft:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Set PR to Draft
+        if: github.event.pull_request.draft == false
+        run: |
+          curl -X PATCH \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{"draft": true}' \
+            https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }} 
